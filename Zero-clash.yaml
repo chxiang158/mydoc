@@ -5,11 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name:  W1,type: wireguard,server: 2606:4700:d0::3082:08bf:f90b:46b0,port: 943,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
-  - {name:  W2,type: wireguard,server: 2606:4700:d0::2849:f0ef:bcb6:be29,port: 943,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
-  - {name:  W3,type: wireguard,server: 2606:4700:d0::56cb:886f:8176:2f50,port: 943,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
-  - {name:  W4,type: wireguard,server: 2606:4700:d0::07aa:3df6:a5b9:1173,port: 943,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
-  - {name:  W5,type: wireguard,server: 2606:4700:d0::21bd:d6cd:f9d7:af3b,port: 8854,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
+  - {name:  W1,type: wireguard,server: 2606:4700:d1::3802:9cd8:1ac2:fb13,port: 5279,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
+  - {name:  W2,type: wireguard,server: 2606:4700:d0::c92a:8012:3167:55a2,port: 5279,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
+  - {name:  W3,type: wireguard,server: 2606:4700:d0::825a:1be1:5457:fa24,port: 5279,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
+  - {name:  W4,type: wireguard,server: 2606:4700:d0::825a:1be1:5457:fa24,port: 1014,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
+  - {name:  W5,type: wireguard,server: 2606:4700:d1::2d9a:66e0:7ad0:1543,port: 5279,ip: 172.16.0.2/32, 2606:4700:110:89d4:4b63:32a4:903:d53d/128,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,private-key: qMhVJgwAg8oJieaXIhlqrs8+ZIZojTbguSglKlvHNW0=,mtu: 1280,udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
