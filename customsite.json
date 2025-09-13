@@ -3,10 +3,10 @@
   "rules": [
     {
       "domain_suffix": [
-        "example.com",
-        "example1.com",
+        "openai.com",
         "hellow.example2.net"
       ]
     }
   ]
+
 }
