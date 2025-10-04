@@ -3,10 +3,11 @@
   "rules": [
     {
       "domain_suffix": [
-        "openai.com",
+        "galaxyaff.cc",
         "hellow.example2.net"
       ]
     }
   ]
 
 }
+
