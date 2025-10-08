@@ -331,9 +331,6 @@
       ],
       "default": "hk-auto"
     },
-
-      "default": "direct"
-    },
     {
       "tag": "tiktol",
       "type": "selector",
