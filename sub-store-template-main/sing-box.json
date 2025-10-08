@@ -320,7 +320,7 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
     {
       "tag": "apple",
@@ -336,7 +336,7 @@
         "all",
         "all-auto"
       ],
-      "default": "direct"
+      "default": "hk-auto"
     },
     {
       "tag": "telegram",
@@ -352,7 +352,7 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
     {
       "tag": "bilibili",
@@ -384,7 +384,7 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
     {
       "tag": "tiktok",
@@ -400,7 +400,7 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "jp-auto"
     },
     {
       "tag": "youtube",
@@ -416,7 +416,7 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
     {
       "tag": "openai",
@@ -432,7 +432,7 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "us-auto"
     },
     {
       "tag": "cn",
