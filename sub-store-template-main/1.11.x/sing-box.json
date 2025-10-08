@@ -412,6 +412,11 @@
       "default": "proxy"
     },
     {
+      "tag": "all",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
       "tag": "hk-auto",
       "type": "urltest",
       "outbounds": [],
