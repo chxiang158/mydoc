@@ -101,20 +101,7 @@
         "outbound": "direct"
       },
       {
-        "rule_set": "bilibili_domain",
-        "action": "route",
-        "outbound": "bilibili"
-      },
-      {
-        "rule_set": [
-          "netflix_ip",
-          "netflix_domain"
-        ],
-        "action": "route",
-        "outbound": "netflix"
-      },
-      {
-        "rule_set": "bahamut_domain",
+        "rule_set": "tiktok_domain",
         "action": "route",
         "outbound": "bahamut"
       },
@@ -141,8 +128,7 @@
               "cn_domain",
               "apple_domain",
               "google_domain",
-              "telegram_domain",
-              "netflix_domain"
+              "telegram_domain"
             ]
           }
         ],
@@ -201,10 +187,10 @@
         "download_detour": "direct"
       },
       {
-        "tag": "bahamut_domain",
+        "tag": "tiktok_domain",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bahamut.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/tiktok.srs",
         "download_detour": "direct"
       },
       {
@@ -240,20 +226,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/google.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "netflix_ip",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/netflix.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "netflix_domain",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/netflix.srs",
         "download_detour": "direct"
       },
       {
@@ -300,15 +272,10 @@
       "tag": "proxy",
       "type": "selector",
       "outbounds": [
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto",
@@ -322,20 +289,15 @@
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
     {
       "tag": "apple",
@@ -343,15 +305,10 @@
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
@@ -364,83 +321,34 @@
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
-    {
-      "tag": "bilibili",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
-      ],
+
       "default": "direct"
     },
     {
-      "tag": "netflix",
+      "tag": "tiktol",
       "type": "selector",
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
       ],
-      "default": "proxy"
-    },
-    {
-      "tag": "bahamut",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
-      ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
     {
       "tag": "youtube",
@@ -448,20 +356,15 @@
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "hk-auto"
     },
     {
       "tag": "openai",
@@ -469,20 +372,15 @@
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "us-auto"
     },
     {
       "tag": "cn",
@@ -490,15 +388,10 @@
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
@@ -511,50 +404,15 @@
       "outbounds": [
         "proxy",
         "direct",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
       ],
       "default": "proxy"
-    },
-    {
-      "tag": "hk",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "tw",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "jp",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "sg",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "us",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "all",
-      "type": "selector",
-      "outbounds": []
     },
     {
       "tag": "hk-auto",
@@ -610,15 +468,10 @@
       "outbounds": [
         "direct",
         "proxy",
-        "hk",
         "hk-auto",
-        "tw",
         "tw-auto",
-        "jp",
         "jp-auto",
-        "sg",
         "sg-auto",
-        "us",
         "us-auto",
         "all",
         "all-auto"
