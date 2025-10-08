@@ -412,11 +412,6 @@
       "default": "proxy"
     },
     {
-      "tag": "all",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
       "tag": "hk-auto",
       "type": "urltest",
       "outbounds": [],
@@ -463,6 +458,11 @@
       "url": "https://www.gstatic.com/generate_204",
       "interval": "1m",
       "tolerance": 50
+    },
+    {
+      "tag": "all",
+      "type": "selector",
+      "outbounds": []
     },
     {
       "tag": "GLOBAL",
